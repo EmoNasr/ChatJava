@@ -38,7 +38,7 @@ public class Listener implements Runnable{
 
     public void run() {
         try {
-            socket = new Socket(hostname, port);
+            socket = new Socket("192.168.57.161", port);
             LoginController.getInstance().showScene();
             outputStream = socket.getOutputStream();
             oos = new ObjectOutputStream(outputStream);
