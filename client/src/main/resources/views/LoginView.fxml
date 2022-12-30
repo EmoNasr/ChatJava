@@ -108,7 +108,7 @@
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button id="connectBtn" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loginButtonAction" stylesheets="@../styles/Login.css" text="Sign up">
+                  <Button id="connectBtn" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#signUpButtonAction" stylesheets="@../styles/Login.css" text="Sign up">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>

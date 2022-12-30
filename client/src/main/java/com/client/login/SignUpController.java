@@ -9,14 +9,16 @@ import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Cursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
@@ -34,7 +36,7 @@ import java.util.ResourceBundle;
 /**
  *  Created by Dominic on 12-Nov-15.
  */
-public class LoginController implements Initializable {
+public class SignUpController implements Initializable {
     @FXML private ImageView Defaultview;
     @FXML private ImageView Sarahview;
     @FXML private ImageView Dominicview;
@@ -49,16 +51,16 @@ public class LoginController implements Initializable {
     private double yOffset;
     private Scene scene;
 
-    private static LoginController instance;
+    private static SignUpController instance;
 
-    public LoginController() {
+    public SignUpController() {
         instance = this;
     }
 
-    public static LoginController getInstance() {
+    public static SignUpController getInstance() {
         return instance;
     }
-    public void loginButtonAction() throws IOException {
+    public void signUpButtonAction() throws IOException {
         String hostname = hostnameTextfield.getText();
         int port = Integer.parseInt(portTextfield.getText());
         String username = usernameTextfield.getText();
@@ -241,10 +243,5 @@ public class LoginController implements Initializable {
             alert.showAndWait();
         });
 
-    }
-
-    public void signUpButtonAction(ActionEvent actionEvent) {
-
-        System.out.println("hello");
     }
 }

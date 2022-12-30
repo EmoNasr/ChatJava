@@ -19,7 +19,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="borderPane" maxWidth="500" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.client.login.LoginController">
+<BorderPane fx:id="borderPane" maxWidth="500" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.client.login.SignUpController">
    <center>
       <GridPane minHeight="-Infinity" prefWidth="453.0" BorderPane.alignment="CENTER">
          <columnConstraints>
@@ -98,12 +98,12 @@
             <Label text="Password : " textFill="#f89406" GridPane.rowIndex="4" />
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
                <children>
-                  <Button id="connectBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#loginButtonAction" stylesheets="@../styles/Login.css" text="Sign in">
+                  <Button id="connectBtn" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  stylesheets="@../styles/Login.css" text="Sign in">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
                   </Button>
-                  <Button id="connectBtn" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#loginButtonAction" stylesheets="@../styles/Login.css" text="Sign up">
+                  <Button id="connectBtn" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false"   stylesheets="@../styles/Login.css" text="Sign up">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
