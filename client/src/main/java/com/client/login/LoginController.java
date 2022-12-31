@@ -64,7 +64,7 @@ public class LoginController implements Initializable {
         String username = usernameTextfield.getText();
         String picture = selectedPicture.getText();
 
-        FXMLLoader fmxlLoader = new FXMLLoader(getClass().getResource("/views/ChatView.fxml"));
+        FXMLLoader fmxlLoader = new FXMLLoader(getClass().getResource("/views/LoginViewSignUp.fxml"));
         Parent window = (Pane) fmxlLoader.load();
         con = fmxlLoader.<ChatController>getController();
         Listener listener = new Listener(hostname, port, username, picture, con);
@@ -243,8 +243,26 @@ public class LoginController implements Initializable {
 
     }
 
-    public void signUpButtonAction(ActionEvent actionEvent) {
+    public void signUpButtonAction(ActionEvent actionEvent) throws IOException {
 
         System.out.println("hello");
+
+
+        Platform.runLater(() -> {
+            FXMLLoader fmxlLoader = new FXMLLoader(getClass().getResource("/views/LoginViewSignUp.fxml"));
+            Parent window = null;
+            try {
+                window = (Pane) fmxlLoader.load();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            Stage stage = MainLauncher.getPrimaryStage();
+            Scene scene = new Scene(window);
+//            stage.setMaxWidth(350);
+//            stage.setMaxHeight(420);
+//            stage.setResizable(true);
+            stage.setScene(scene);
+//            stage.centerOnScreen();
+        });
     }
 }

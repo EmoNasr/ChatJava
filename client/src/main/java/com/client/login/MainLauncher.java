@@ -22,7 +22,7 @@ public class MainLauncher extends Application {
         primaryStage.getIcons().add(new Image(getClass().getClassLoader().getResource("images/plug.png").toString()));
         Scene mainScene = new Scene(root);
         mainScene.setRoot(root);
-        primaryStage.setResizable(false);
+        primaryStage.setResizable(true);
         primaryStage.setScene(mainScene);
         primaryStage.show();
         primaryStage.setOnCloseRequest(e -> Platform.exit());
