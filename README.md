@@ -12,9 +12,7 @@ Currently in Development.
 <img src="http://i.imgur.com/2UvHIJb.png"/>
 </p>
 Notifications using Tray-Notifications Library
-<p align="center">
-<img src="http://i.imgur.com/Ckww6DW.png"/>
-</p>
+
 
 <h3> To-Do </h3>
 <ul>
